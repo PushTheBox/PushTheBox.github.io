@@ -3189,14 +3189,17 @@ var UnityModule = (function() {
               document.location == "https://www.coolmathgames.com"
       }
       function _ReplayEvent(level) {
+        return false;
           if (parent.cmgGameEvent !== undefined && parent.cmgGameEvent !== null)
               parent.cmgGameEvent("replay", level)
       }
       function _StartGameEvent() {
+        return false;
           if (parent.cmgGameEvent !== undefined && parent.cmgGameEvent !== null)
               parent.cmgGameEvent("start")
       }
       function _StartLevelEvent(level) {
+        return false;
           if (parent.cmgGameEvent !== undefined && parent.cmgGameEvent !== null)
               parent.cmgGameEvent("start", level)
       }
@@ -4041,9 +4044,9 @@ var UnityModule = (function() {
                   node.stream_ops = MEMFS.ops_table.chrdev.stream
               }
               node.timestamp = Date.now();
-              if (parent) {
-                  parent.contents[name] = node
-              }
+            //   if (parent) {
+            //       parent.contents[name] = node
+            //   }
               return node
           }
           ),
@@ -5010,9 +5013,9 @@ var UnityModule = (function() {
                   node.size = 4096;
                   node.contents = {}
               }
-              if (parent) {
-                  parent.contents[name] = node
-              }
+            //   if (parent) {
+            //       parent.contents[name] = node
+            //   }
               return node
           }
           ),
