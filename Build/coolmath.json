@@ -4,7 +4,7 @@
 "productVersion": "1",
 "dataUrl": "coolmath.data.unityweb",
 "wasmCodeUrl": "coolmath.wasm.code.unityweb",
-"wasmFrameworkUrl": "coolmath.wasm.framework.unityweb",
+"wasmFrameworkUrl": "coolmath.wasm.framework.unityweb.js",
 "graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
